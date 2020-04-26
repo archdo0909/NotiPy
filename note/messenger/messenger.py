@@ -4,7 +4,7 @@ class messenger:
         self.API_PASSWORD = API_PASSWORD
         self._message = ""
         self._msg = ""
-        
+
     @property
     def recevier(self):
         return self._recevier
@@ -20,4 +20,3 @@ class messenger:
     @message.setter
     def message(self, text):
         self._msg = text
-        
