@@ -1,6 +1,6 @@
-# email-to-me
+# Notipy
 
-## How to use Email system
+## How to use NotiPy's email system
 
 Create Note object :
 
@@ -17,5 +17,9 @@ Set recevier's mail address, addressee, sender :
     mail.set_from = ME
     mail.set_to = YOU
     mail.set_subject = SUBJECT
+
+Send email
+
+    mail.send_email()
 
 
