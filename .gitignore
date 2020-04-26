@@ -6,6 +6,9 @@ config.py
 #pyc files
 *.pyc
 
+#old version
+email_sender.py
+
 #folder
 __pycache__
 **/__pycache__
