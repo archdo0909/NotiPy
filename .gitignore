@@ -2,4 +2,6 @@
 config.pkl
 config_maker.py
 
+#folder
+!**/__pycache__/
 

@@ -1,0 +1,3 @@
+# EMAIL API
+API_ID = ""
+API_PASSWORD = ""

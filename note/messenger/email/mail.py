@@ -22,7 +22,10 @@ class Mail(messenger):
         except:
             print("Please write your message")
 
-        message = self._email_msg.copy()
+        #message = self._email_msg.copy()
+        message['From'] = self._email_msg['From']
+        message['To'] = self._email_msg['To']
+        message['Subject'] = self._email_msg['subject']
 
         ################DISPLAY################
         pprint(f'From : {message["From"]}')
