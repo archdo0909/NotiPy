@@ -1,5 +1,12 @@
 # config file
 config.pkl
 config_maker.py
+config.py
 
+#pyc files
+*.pyc
+
+#folder
+__pycache__
+**/__pycache__
 
