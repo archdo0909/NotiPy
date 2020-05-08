@@ -17,7 +17,7 @@ def get_requirements():
         return requirements
 
 setup(
-    name="NotiPy",
+    name="pyPager",
     version="0.1.0",
     author='Doyeon Kim',
     author_email='archdo0909@gmail.com',
