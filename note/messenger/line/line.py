@@ -18,7 +18,7 @@ class Line(messenger):
         TARGET_URL = "https://notify-api.line.me/api/notify"
         headers = {'Authorization': 'Bearer ' + self.API_PASSWORD}
         payload = {'message': self._message}
-        files = {'imageFile': open(img, 'rb')} if img else None
+        files = {'imageFile': open(self._img, 'rb')} if self._img else None
         r = requests.post(TARGET_URL, headers=headers, params=payload, files=files)
         if files:
             files['imageFIle'].close()
