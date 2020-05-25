@@ -5,8 +5,8 @@ from pprint import pprint
 from note.messenger.messenger import messenger
 
 class Line(messenger):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, API_ID, API_PASSWORD):
+        super().__init__(API_ID, API_PASSWORD)
         
     def print_all(self):
         print(self.API_PASSWORD)
@@ -16,7 +16,7 @@ class Line(messenger):
 
     def send_message(self, img):
         TARGET_URL = "https://notify-api.line.me/api/notify"
-        headers = {'Authorization': 'Bearer ' + self._recevier}
+        headers = {'Authorization': 'Bearer ' + self.API_PASSWORD}
         payload = {'message': self._message}
         files = {'imageFile': open(img, 'rb')} if img else None
         r = requests.post(TARGET_URL, headers=headers, params=payload, files=files)
@@ -24,6 +24,11 @@ class Line(messenger):
             files['imageFIle'].close()
             return r.status_code
         print("Message has been sent")
-    
-        
-    
+
+    @property
+    def image(self):
+        return self._img
+
+    @image.setter
+    def image(self, image):
+        self._img = image
