@@ -15,7 +15,7 @@ if __name__ == "__main__":
     mail.set_to = "YOU"
     mail.set_subject = "This is a test"
     mail.send_email()
-
+    
 
     #LINE
     from config import LINE_API_ID
