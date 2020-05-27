@@ -17,7 +17,7 @@ if __name__ == "__main__":
     mail.send_email()
     
 
-    #LINE
+    # LINE
     from config import LINE_API_ID
     from config import LINE_API_PASSWORD
 
@@ -26,3 +26,14 @@ if __name__ == "__main__":
     line.message = "Model Training done!" 
     line.image = "~/pic/photo.png"
     line.send_message()
+
+
+    # TELEGRAM
+    from config import TELEGRAM_API_ID
+    from config import TELEGRAM_API_PASSWORD
+
+    my_note = note.NOTE()
+    tel = my_note.Telegram(TELEGRAM_API_ID, TELEGRAM_API_PASSWORD)
+    tel.message = "Model Training Done!"
+    #tel.image = "~/pic/photo.png"
+    tel.send_message()
