@@ -18,7 +18,7 @@ def get_requirements():
 
 setup(
     name="py-multi-pager",
-    version="0.2.1",
+    version="0.2.2",
     author='Doyeon Kim',
     author_email='archdo0909@gmail.com',
     description="Easy and fast python SNS notifier.",
