@@ -18,11 +18,12 @@ def get_requirements():
 
 setup(
     name="py-multi-pager",
-    version="0.1.0",
+    version="0.2.0",
     author='Doyeon Kim',
     author_email='archdo0909@gmail.com',
     description="Easy and fast python SNS notifier.",
     long_description=get_readme(),
+    long_description_content_type="text/markdown",
     license="MIT",
     install_requires=get_requirements(),
     url='https://github.com/archdo0909/NotiPy',
