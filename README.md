@@ -26,6 +26,13 @@ Send email
 ## How to use pyPager with Line
 ---
 
+### How to set up Line-Notify-Bot
+1. Access to https://notify-bot.line.me/doc/en/
+2. Login with your line account and go to 'My Page'
+
+![MyPage](./img/line_my_page.png)
+
+
 Get Line Notify Token
 
 1. Access to https://notify-bot.line.me/doc/en/
