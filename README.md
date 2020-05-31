@@ -30,7 +30,7 @@ Send email
 1. Access to https://notify-bot.line.me/doc/en/
 2. Login with your line account and go to 'My Page'
 
-![MyPage](./img/line_my_page_edit.png){: width="200" height="100"}
+![MyPage](./img/line_my_page_edit.png){:height="200px" width="100px"}
 
 
 Get Line Notify Token
