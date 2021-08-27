@@ -1,5 +1,10 @@
 # Notipy
 
+## How to install
+~~~
+pip install py-multi-pager
+~~~
+
 ## How to use pyPager's email system
 ---
 
@@ -9,7 +14,7 @@ Create Note object :
 
 Select Email :
 
-    mail = my_note.Email(YOUR_EMAIL_ID, YOUR_EMAIL_PASSWORD)
+    mail = my_note.Mail(YOUR_EMAIL_ID, YOUR_EMAIL_PASSWORD)
 
 Set recevier's mail address, addressee, sender :
 
